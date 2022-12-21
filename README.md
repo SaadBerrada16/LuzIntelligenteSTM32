@@ -1,21 +1,16 @@
-# LuzIntelligenteSTM32
+# Controlador de Luz Intelligente
 
 Proyecto de sistemas embebidos
 
 Este proyecto se compila y se executa con el IDE STM32CubeIDE. La placa de desarollo utilizada es la STM32F401CCU6 (Black Pill) que se conecta a la computadora con el ST LINK.
-# eGardener
 
-<p align=center>
-    <img src="docs/images/banner.png" alt="Banner eGardener" height="350"/>
-</p>
-
-eGardener es un sistema de monitoreo y control de jardines a través de Internet implementado en mBed OS utilizando como placa de desarrollo una placa STM32 Nucleo-144 F429ZI.
+El Controlador de Luz Intellige es un sistema de monitoreo y control de luz a través de sensores implementado en mBed OS utilizando como placa de desarrollo una placa STM32F401 Blackpill.
 
 El proyecto se realiza en el marco del trabajo final de la materia Sistemas Embebidos de la Facultad de Ingeniería de la Universidad de Buenos Aires.
 
-[Repositorio](https://github.com/mati1297/egardener)
+[Repositorio](https://github.com/SaadBerrada16/LuzIntelligenteSTM32)
 
-[Definición de Requisitos y Casos de Uso del Trabajo Final](https://docs.google.com/document/d/11dgvYxZRJ_eEkciaerqvtIlO_5C3YHUYF0_V8Po2s9I/edit?usp=sharing)
+[Definición de Requisitos y Casos de Uso del Trabajo Final](https://docs.google.com/document/d/1cPnTIswwUo-lCDzXssSQgjeIAEjO98fRAwfNpBX1VfY/edit?usp=sharing)
 
 ## Descripción y diagrama en bloques
 
