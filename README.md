@@ -4,7 +4,7 @@ Proyecto de sistemas embebidos
 
 Este proyecto se compila y se executa con el IDE STM32CubeIDE. La placa de desarollo utilizada es la STM32F401CCU6 (Black Pill) que se conecta a la computadora con el ST LINK.
 
-El Controlador de Luz Intellige es un sistema de monitoreo y control de luz a través de sensores implementado en mBed OS utilizando como placa de desarrollo una placa STM32F401 Blackpill.
+El Controlador de Luz Intellige es un sistema de monitoreo y control de luz a través de sensores implementado en mBed OS utilizando como placa de desarrollo la placa STM32F401 conocida como la "blackpill".
 
 El proyecto se realiza en el marco del trabajo final de la materia Sistemas Embebidos de la Facultad de Ingeniería de la Universidad de Buenos Aires.
 
@@ -14,13 +14,9 @@ El proyecto se realiza en el marco del trabajo final de la materia Sistemas Embe
 
 ## Descripción y diagrama en bloques
 
-eGardener provee sensado de temperatura, humedad ambiente y de la tierra y luz. Además, permite la activación de actuadores de luz y riego, incluyendo la lógica de control de los actuadores (no el control de los actuadores en sí). 
+En este trabajo se explica el diseño y armado de un controlador de luz inteligente. Este controlador debe permitir encender y apagar una luz de diferentes maneras usando sensores. Se puede manejarla con un sensor de presencia infrarrojo, un sensor de sonido, y un sensor de movimiento.
 
-El sistema puede ser controlado a través de Internet utilizando un bot de la aplicación de mensajería Telegram. A través de este bot es posible interactuar con el dispositivo y obtener información del sensado de datos como también configurar aspectos del control y del sensado del jardín.
-
-Es posible sensar los parámetros tanto manualmente como de manera regular. Y el control del jardín se realiza tanto de manera regular o en función de los parámetros sensados.
-
-Se muestra en la Figura un diagrama en bloques del proyecto. Se observan tres grandes grupos de periféricos: comunicación, sensado, control de tiempo y simulación de actuadores. La primera consiste en un microcontrolador ESP32 utilizado como Módulo Wi-Fi a través de puerto serie. La segunda consiste en tres sensores: un sensor de humedad y temperatura ambiente (que se controla a través de I2C), un sensor de luz, y un sensor de humedad de tierra, el tercero consiste en un módulo RTC para poder llevar un control preciso del tiempo para las funciones por tiempo, el último consiste en dos leds que simularán el encendido de los actuadores.
+Por su comodidad, este de luz controlador podría tener una utilización personal futura a este proyecto. En efecto, podría ser conectado a una luz en su domicilio para controlarla a distancia o automáticamente.
 
 <p align=center>
     <img src="docs/images/block_diagram.png" alt="Diagrama en bloques del proyecto" height="350"/>
@@ -31,25 +27,27 @@ Se muestra en la Figura un diagrama en bloques del proyecto. Se observan tres gr
 El repositorio se organiza con la siguiente estructura
 
     .
-    ├── docs
-    │   ├── datasheets
-    │   └── images
-    ├── esp32_wifi
-    ├── modules
-    │   ├── aux_functions
-    │   ├── clock
-    │   ├── egardener
-    │   ├── wifi
+    ├── Core
+    │   ├── Inc
+    │   |   ├── main.h
+    │   |   └── ...
+    │   ├── Src
+    │   |   ├── main.c
+    │   |   └── ...
+    │   └── Startup
+    ├── Debug
     │   └── ...
-    ├── main.cpp
+    ├── Drivers
+    │   └── ...
+    ├── LuzIntelligente.ioc
     ├── README.md
     └── ...
 
 
 En donde se tienen las carpetas o archivos:
-* `docs/`: carpeta que incluye documentos del proyecto, tales como *datasheets* de los componentes utilizados, e imágenes (utilizadas en este y otros documentos).
+* `Core/`: carpeta que incluye las carpetas Inc, Src, y Startup. La carpeta Inc contiene los .h del proyecto y Src contiene los archivos principales del programa del sistema.
 * `esp32_wifi/`: carpeta que contiene los archivos fuente utilizados para programar la placa ESP32 utilizada como módulo Wi-Fi y controlada a través de puerto serie.
 * `modules/`: carpeta que contiene los archivos fuente de los distintos módulos que integran el programa del sistema.
-* `main.cpp`: archivo principal del programa del sistema.
+* `main.c`: archivo principal del programa del sistema.
 * `README.md`: este archivo *read me*.
 * Otros archivos tales como licencia, archivos de configuración de mBed OS, etc.
