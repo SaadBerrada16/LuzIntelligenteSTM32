@@ -14,12 +14,7 @@ En este trabajo se explica el diseño y armado de un controlador de luz intelige
 
 Por su comodidad, este de luz controlador podría tener una utilización personal futura a este proyecto. En efecto, podría ser conectado a una luz en su domicilio para controlarla a distancia o automáticamente.
 
-<p align=center>
-    <img src="![Diagram](https://user-images.githubusercontent.com/116112545/209143724-cff179da-1e25-4633-990e-c9463a2f07ee.png)
-" alt="Diagrama en bloques del proyecto" height="350"/>
-
 ![Diagram](https://user-images.githubusercontent.com/116112545/209143724-cff179da-1e25-4633-990e-c9463a2f07ee.png)
-
 
 ## Organización del repositorio
 
@@ -44,9 +39,9 @@ El repositorio se organiza con la siguiente estructura
 
 
 En donde se tienen las carpetas o archivos:
-* `Core/`: carpeta que incluye las carpetas Inc, Src, y Startup. La carpeta Inc contiene los .h del proyecto y Src contiene los archivos principales del programa del sistema.
-* `esp32_wifi/`: carpeta que contiene los archivos fuente utilizados para programar la placa ESP32 utilizada como módulo Wi-Fi y controlada a través de puerto serie.
-* `modules/`: carpeta que contiene los archivos fuente de los distintos módulos que integran el programa del sistema.
-* `main.c`: archivo principal del programa del sistema.
+* `Core/`: carpeta que incluye las carpetas 'Inc/', 'Src/', y 'Startup/'. La carpeta Inc contiene los .h del proyecto y Src contiene los archivos principales del programa del sistema.
+* `Debug/`: carpeta similaria a `Core/` utilizada por el debug del proyecto.
+* `Drivers/`: carpeta que contiene los archivos fuente de los distintos drivers que integran el programa del sistema.
+* `LuzIntelligente.ioc`: archivo de configuracion de pines del IDE.
 * `README.md`: este archivo *read me*.
 * Otros archivos tales como licencia, archivos de configuración de mBed OS, etc.
