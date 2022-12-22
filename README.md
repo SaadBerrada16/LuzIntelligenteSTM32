@@ -1,10 +1,6 @@
 # Controlador de Luz Intelligente
 
-Proyecto de sistemas embebidos
-
-Este proyecto se compila y se executa con el IDE STM32CubeIDE. La placa de desarollo utilizada es la STM32F401CCU6 (Black Pill) que se conecta a la computadora con el ST LINK.
-
-El Controlador de Luz Intellige es un sistema de monitoreo y control de luz a través de sensores implementado en mBed OS utilizando como placa de desarrollo la placa STM32F401 conocida como la "blackpill".
+El Controlador de Luz Intellige es un sistema de monitoreo y control de luz a través de sensores implementado en mBed OS utilizando como placa de desarrollo la placa STM32F401 conocida como la "blackpill". Este proyecto se compila y se executa con el IDE STM32CubeIDE
 
 El proyecto se realiza en el marco del trabajo final de la materia Sistemas Embebidos de la Facultad de Ingeniería de la Universidad de Buenos Aires.
 
