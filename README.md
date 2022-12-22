@@ -16,7 +16,8 @@ Por su comodidad, este de luz controlador podría tener una utilización persona
 
 <p align=center>
     <img src="docs/images/block_diagram.png" alt="Diagrama en bloques del proyecto" height="350"/>
-</p>
+</p>![Interfaz con el usario)](https://user-images.githubusercontent.com/116112545/209142978-88f9ee47-9688-4450-ac84-6dfb961be0bc.png)
+
 
 ## Organización del repositorio
 
