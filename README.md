@@ -15,8 +15,10 @@ En este trabajo se explica el diseño y armado de un controlador de luz intelige
 Por su comodidad, este de luz controlador podría tener una utilización personal futura a este proyecto. En efecto, podría ser conectado a una luz en su domicilio para controlarla a distancia o automáticamente.
 
 <p align=center>
+    ![Diagram](https://user-images.githubusercontent.com/116112545/209143724-cff179da-1e25-4633-990e-c9463a2f07ee.png)
     <img src="docs/images/block_diagram.png" alt="Diagrama en bloques del proyecto" height="350"/>
-</p>![Interfaz con el usario)](https://user-images.githubusercontent.com/116112545/209142978-88f9ee47-9688-4450-ac84-6dfb961be0bc.png)
+
+![Diagram](https://user-images.githubusercontent.com/116112545/209143724-cff179da-1e25-4633-990e-c9463a2f07ee.png)
 
 
 ## Organización del repositorio
